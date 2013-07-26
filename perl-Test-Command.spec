@@ -1,15 +1,15 @@
 %define upstream_name    Test-Command
-%define upstream_version 0.08
+%define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.11
+Release:	1
 
 Summary:	Test routines for external commands
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-Command-0.11.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::Simple)
@@ -57,4 +57,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.80.0-1mdv2011.0
 + Revision: 602043
 - import perl-Test-Command
+
 
