@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.11
-Release:	1
+Release:	2
 
 Summary:	Test routines for external commands
 License:	GPL+ or Artistic
