@@ -1,14 +1,12 @@
 %define upstream_name    Test-Command
-%define upstream_version 0.11
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.11
-Release:	4
+Version:	0.11
+Release:	5
 
 Summary:	Test routines for external commands
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
+Url:		https://metacpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Test/Test-Command-0.11.tar.gz
 
 BuildRequires:	make
@@ -33,7 +31,7 @@ array reference it is dereferenced and passed to 'system' as a list. See
 ''perldoc -f system'' for how these may differ.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
